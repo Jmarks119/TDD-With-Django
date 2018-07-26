@@ -8,3 +8,4 @@ __pycache__
 
 *.sublime-workspace
 /static
+.env
