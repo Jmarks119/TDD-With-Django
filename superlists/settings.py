@@ -134,7 +134,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Logging Settings
 
-LOGING = {
+LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
