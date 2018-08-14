@@ -4,8 +4,6 @@ from .base import FunctionalTest
 from .server_tools import create_session_on_server
 from .management.commands.create_session import create_pre_authenticated_session
 
-User = get_user_model()
-
 
 class MyListsTest(FunctionalTest):
 
@@ -19,7 +17,7 @@ class MyListsTest(FunctionalTest):
 		self.browser.get(self.live_server_url + "/404_no_such_url/")
 		self.browser.add_cookie(dict(
 			name=settings.SESSION_COOKIE_NAME,
-			value=session.session_key,
+			value=session_key,
 			path='/',
 		))
 
