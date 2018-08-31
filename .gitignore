@@ -9,3 +9,4 @@ __pycache__
 *.sublime-workspace
 /static
 .env
+functional_tests/screendumps
