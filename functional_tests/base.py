@@ -12,7 +12,7 @@ from .server_tools import reset_database
 from .server_tools import create_session_on_server
 from .management.commands.create_session import create_pre_authenticated_session
 
-MAX_WAIT = 10
+MAX_WAIT = 20
 SCREEN_DUMP_LOCATION = os.path.join(
 	os.path.dirname(os.path.abspath(__file__)), 'screendumps'
 )
