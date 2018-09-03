@@ -4,7 +4,13 @@
 {% if user == list.owner %}
 Your To-Do list
 {% else %}
-<span id="id_list_owner">{{ list.owner.email }}</span>'s list
+	<span id="id_list_owner">
+		{% if list.owner == None %}
+			Anonymous user
+		{% else %}
+			{{ list.owner.email }}
+		{% endif %}
+	</span>'s list
 {% endif %}
 {% endblock %}
 
